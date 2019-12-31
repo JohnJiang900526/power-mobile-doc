@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>配置config.js | 普华移动端配置文档</title>
+    <meta name="description" content="Power-mobile2配置文档">
+    
+    
+    <link rel="preload" href="/power-mobile-doc/assets/css/0.styles.a624016e.css" as="style"><link rel="preload" href="/power-mobile-doc/assets/js/app.9dc17d65.js" as="script"><link rel="preload" href="/power-mobile-doc/assets/js/2.42f6d855.js" as="script"><link rel="preload" href="/power-mobile-doc/assets/js/13.a94ea747.js" as="script"><link rel="prefetch" href="/power-mobile-doc/assets/js/10.6227c827.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/11.528d0d83.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/12.15b872df.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/14.b5f91b15.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/15.62b40e58.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/16.52c4b756.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/17.36e32f0b.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/18.f49bc8e1.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/19.00aa17c5.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/20.67fd2b7d.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/21.7137e5b6.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/22.945b7d30.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/23.e59fd9a4.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/24.6a711141.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/25.65f2a5c0.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/3.55265c94.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/4.b58c1e7f.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/5.ba8e0ceb.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/6.0c625dc1.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/7.9b3503ce.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/8.b2c16fbf.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/9.3cd29814.js">
+    <link rel="stylesheet" href="/power-mobile-doc/assets/css/0.styles.a624016e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/power-mobile-doc/" class="home-link router-link-active"><!----> <span class="site-name">普华移动端配置文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/power-mobile-doc/last/" class="nav-link">文档下载</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/power-mobile-doc/last/" class="nav-link">文档下载</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>初识 Power-Mobile</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/power-mobile-doc/start/" class="sidebar-link">介绍</a></li><li><a href="/power-mobile-doc/start/install.html" class="sidebar-link">安装 Power-Mobile APP</a></li><li><a href="/power-mobile-doc/start/version.html" class="sidebar-link">Power-Mobile 版本更新</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Power-Mobile APP服务端部署</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/power-mobile-doc/server/" class="sidebar-link">PowerMobile 服务端配置文档</a></li><li><a href="/power-mobile-doc/server/config.html" class="active sidebar-link">配置config.js</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/power-mobile-doc/server/config.html#site-sestion" class="sidebar-link">SITE_SESTION</a></li><li class="sidebar-sub-header"><a href="/power-mobile-doc/server/config.html#node-site" class="sidebar-link">NODE_SITE</a></li><li class="sidebar-sub-header"><a href="/power-mobile-doc/server/config.html#tabsdata" class="sidebar-link">tabsData</a></li><li class="sidebar-sub-header"><a href="/power-mobile-doc/server/config.html#defaultactivetab" class="sidebar-link">defaultActiveTab</a></li><li class="sidebar-sub-header"><a href="/power-mobile-doc/server/config.html#usechatmodule" class="sidebar-link">useChatModule</a></li><li class="sidebar-sub-header"><a href="/power-mobile-doc/server/config.html#showurlwhennoconfig" class="sidebar-link">showUrlWhenNoConfig</a></li><li class="sidebar-sub-header"><a href="/power-mobile-doc/server/config.html#uploadhumanavatar" class="sidebar-link">UploadHumanAvatar</a></li><li class="sidebar-sub-header"><a href="/power-mobile-doc/server/config.html#loginlogourl" class="sidebar-link">loginLogoUrl</a></li><li class="sidebar-sub-header"><a href="/power-mobile-doc/server/config.html#loginsubtext" class="sidebar-link">loginSubText</a></li><li class="sidebar-sub-header"><a href="/power-mobile-doc/server/config.html#epsbootid-已废弃" class="sidebar-link">EPSBootId(已废弃)</a></li><li class="sidebar-sub-header"><a href="/power-mobile-doc/server/config.html#defaultprojectavatar" class="sidebar-link">defaultProjectAvatar</a></li><li class="sidebar-sub-header"><a href="/power-mobile-doc/server/config.html#allowmultiplesite" class="sidebar-link">allowMultipleSite</a></li><li class="sidebar-sub-header"><a href="/power-mobile-doc/server/config.html#hideworkflowattach-新增功能" class="sidebar-link">hideWorkFlowAttach(新增功能)</a></li><li class="sidebar-sub-header"><a href="/power-mobile-doc/server/config.html#useouterweb" class="sidebar-link">useOuterWeb</a></li><li class="sidebar-sub-header"><a href="/power-mobile-doc/server/config.html#shortreturnenable" class="sidebar-link">shortReturnEnable</a></li><li class="sidebar-sub-header"><a href="/power-mobile-doc/server/config.html#personallist" class="sidebar-link">personalList</a></li></ul></li><li><a href="/power-mobile-doc/server/configedit.html" class="sidebar-link">Power.ConfigEdit.exe APP配置信息</a></li><li><a href="/power-mobile-doc/server/nodeserver.html" class="sidebar-link">nodeServer 配置信息</a></li><li><a href="/power-mobile-doc/server/apppush.html" class="sidebar-link">APP推送消息的配置</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Power-Mobile Web配置文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/power-mobile-doc/web/" class="sidebar-link">PowerMobile Web配置文档</a></li><li><a href="/power-mobile-doc/web/devplat.html" class="sidebar-link">开发平台使用简要说明</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Power-Mobile 窗体的详细配置</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/power-mobile-doc/window/" class="sidebar-link">窗体的详细配置</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Power-Mobile 表单的详细配置</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/power-mobile-doc/form/" class="sidebar-link">表单的详细配置</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Power-Mobile 向导的详细配置</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/power-mobile-doc/guide/" class="sidebar-link">向导的详细配置</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Power-Mobile 企业微信配置</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/power-mobile-doc/wechat/" class="sidebar-link">企业微信配置</a></li><li><a href="/power-mobile-doc/wechat/wechatpush.html" class="sidebar-link">微信消息推送</a></li><li><a href="/power-mobile-doc/wechat/outmenu.html" class="sidebar-link">输出PowerMobile2菜单</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>文档下载</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/power-mobile-doc/last/" class="sidebar-link">普华移动端APP用户操作手册</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="配置config-js"><a href="#配置config-js" class="header-anchor">#</a> 配置config.js</h1> <p>打开PowerMobile2文件夹 修改PowerMobile2\static\config\config.js文件。</p> <h2 id="site-sestion"><a href="#site-sestion" class="header-anchor">#</a> SITE_SESTION</h2> <p>SITE_SESTION是你当前项目的地址【必须配置】，项目地址的最后面不要带&quot;/&quot;， 注意站点地址要加请求协议。</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token comment">// 对的配置</span>
+  <span class="token keyword">var</span> <span class="token constant">SITE_SESTION</span> <span class="token operator">=</span> <span class="token string">&quot;http://xxx.com:7109&quot;</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 错的配置1 最后面不要带&quot;/&quot;</span>
+  <span class="token keyword">var</span> <span class="token constant">SITE_SESTION</span> <span class="token operator">=</span> <span class="token string">&quot;http://xxx.com:7109/&quot;</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 错的配置2 地址要加请求协议</span>
+  <span class="token keyword">var</span> <span class="token constant">SITE_SESTION</span> <span class="token operator">=</span> <span class="token string">&quot;xxx.com:7109/&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="node-site"><a href="#node-site" class="header-anchor">#</a> NODE_SITE</h2> <p>NODE_SITE 代表的是nodeServer的地址【必须配置】，node服务器的站点，必须配置，
+如果node服务没有部署，请参考node 服务端配置信息。此字段要在链接的后面添加&quot;/&quot;，
+注意nodeServer站点地址要加请求协议</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token comment">// 对的配置</span>
+  <span class="token keyword">var</span> <span class="token constant">NODE_SITE</span> <span class="token operator">=</span> <span class="token string">&quot;http://xxx.com:3001/&quot;</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 错的配置1 此字段要在链接的后面添加&quot;/&quot;</span>
+  <span class="token keyword">var</span> <span class="token constant">NODE_SITE</span> <span class="token operator">=</span> <span class="token string">&quot;http://xxx.com:3001&quot;</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 错的配置2 注意nodeServer站点地址要加请求协议</span>
+  <span class="token keyword">var</span> <span class="token constant">NODE_SITE</span> <span class="token operator">=</span> <span class="token string">&quot;xxx.com:3001&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="tabsdata"><a href="#tabsdata" class="header-anchor">#</a> tabsData</h2> <p>此变量代表要激活的主tab页，默认配置信息如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> tabsData <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    to<span class="token punctuation">:</span> <span class="token string">&quot;/message&quot;</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;消息&quot;</span><span class="token punctuation">,</span>
+    icon<span class="token punctuation">:</span> <span class="token string">&quot;icon-message&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    to<span class="token punctuation">:</span> <span class="token string">&quot;/dynamics&quot;</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;动态&quot;</span><span class="token punctuation">,</span>
+    icon<span class="token punctuation">:</span> <span class="token string">&quot;icon-compass&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    to<span class="token punctuation">:</span> <span class="token string">&quot;/portal&quot;</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;门户&quot;</span><span class="token punctuation">,</span>
+    icon<span class="token punctuation">:</span> <span class="token string">&quot;icon-project2&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    to<span class="token punctuation">:</span> <span class="token string">&quot;/work&quot;</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;工作台&quot;</span><span class="token punctuation">,</span>
+    icon<span class="token punctuation">:</span> <span class="token string">&quot;icon-work&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    to<span class="token punctuation">:</span> <span class="token string">&quot;/personal&quot;</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;我&quot;</span><span class="token punctuation">,</span>
+    icon<span class="token punctuation">:</span> <span class="token string">&quot;icon-mine&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>上面的默认字段和下面默认的tab页签一一对应。</p> <img src="/power-mobile-doc/img/图片2.png"> <p>如果想禁止其中一个tab页签的话，可以在上面的默认配置中去掉。比如：禁止掉动态和门户</p> <p>如果数组 tabsData为空null或者[],上图中的按钮全部显示，</p> <p>如果不想要其中的一个tab页签，可以在默认的tabsData中去掉对应的项，</p> <p>但是必须保证tabsData不为null或者[]。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> tabsData <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    to<span class="token punctuation">:</span> <span class="token string">&quot;/message&quot;</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;消息&quot;</span><span class="token punctuation">,</span>
+    icon<span class="token punctuation">:</span> <span class="token string">&quot;icon-message&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// {</span>
+  <span class="token comment">//   to: &quot;/dynamics&quot;,</span>
+  <span class="token comment">//   name: &quot;动态&quot;,</span>
+  <span class="token comment">//   icon: &quot;icon-compass&quot;</span>
+  <span class="token comment">// },</span>
+  <span class="token comment">// {</span>
+  <span class="token comment">//   to: &quot;/portal&quot;,</span>
+  <span class="token comment">//   name: &quot;门户&quot;,</span>
+  <span class="token comment">//   icon: &quot;icon-project2&quot;</span>
+  <span class="token comment">// },</span>
+  <span class="token punctuation">{</span>
+    to<span class="token punctuation">:</span> <span class="token string">&quot;/work&quot;</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;工作台&quot;</span><span class="token punctuation">,</span>
+    icon<span class="token punctuation">:</span> <span class="token string">&quot;icon-work&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    to<span class="token punctuation">:</span> <span class="token string">&quot;/personal&quot;</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;我&quot;</span><span class="token punctuation">,</span>
+    icon<span class="token punctuation">:</span> <span class="token string">&quot;icon-mine&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="defaultactivetab"><a href="#defaultactivetab" class="header-anchor">#</a> defaultActiveTab</h2> <p>此变量默认是字符串 &quot;/message&quot;，如果想改变此默认配置项，需要改变此变量的值，
+此变量的值的取值区间是tabsData数据中的to字段的所有值。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 配置默认显示的tab页</span>
+<span class="token keyword">var</span> defaultActiveTab <span class="token operator">=</span> <span class="token string">&quot;/message&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="usechatmodule"><a href="#usechatmodule" class="header-anchor">#</a> useChatModule</h2> <p>此变量的意思是是否启用聊天功能。此变量默认是false,表示不启用，如果设置为true，
+将会启用聊天功能。聊天功能只能在APP环境使用，在微信环境中，不能使用。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 是否启用聊天</span>
+<span class="token keyword">var</span> useChatModule <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span> <span class="token comment">// true | false</span>
+</code></pre></div><h2 id="showurlwhennoconfig"><a href="#showurlwhennoconfig" class="header-anchor">#</a> showUrlWhenNoConfig</h2> <p>此变量的意思是表单没有配置文件的时候，只显示详情页签，
+默认是false 代表显示详情和所有子表，也包括附件，
+如果设置成true, 只显示详情tab页签。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 表单没有配置文件的时候，只显示详情页签</span>
+<span class="token comment">// 默认是false 代表显示详情和所有子表，也包括附件</span>
+<span class="token comment">// 如果设置成true, 只显示详情tab页签</span>
+<span class="token keyword">var</span> showUrlWhenNoConfig <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="uploadhumanavatar"><a href="#uploadhumanavatar" class="header-anchor">#</a> UploadHumanAvatar</h2> <p>此变量的意思是是否启用个人中心上传人员头像的功能，启用true, 不启用 false。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 个人中心 上传人员头像 启用true, 不启用 false</span>
+<span class="token keyword">var</span> UploadHumanAvatar <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="loginlogourl"><a href="#loginlogourl" class="header-anchor">#</a> loginLogoUrl</h2> <p>此变量的意思是登录页的logo地址，默认&quot;/PowerMobile2/static/img/login-logo.png&quot;，
+可以根据自己想要的logo进行配置。如果没有配置，logo将不会显示。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 登录logo</span>
+<span class="token keyword">var</span> loginLogoUrl <span class="token operator">=</span> <span class="token string">&quot;/PowerMobile2/static/img/login-logo.png&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="loginsubtext"><a href="#loginsubtext" class="header-anchor">#</a> loginSubText</h2> <p>此变量的意思是设置登录页logo下方的问题，可以根据自己想要的名称进行修改，默认值为&quot;项目管理平台移动应用&quot;。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> loginSubText <span class="token operator">=</span> <span class="token string">&quot;项目管理平台移动应用&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="epsbootid-已废弃"><a href="#epsbootid-已废弃" class="header-anchor">#</a> EPSBootId(已废弃)</h2> <p>此变量的意思是设置EPS的根节点，默认值是&quot;00000000-0000-0000-0000-0000000000a4&quot;，
+一些项目中发现EPS中的数据没有根节点的数据，这个时候就需要对根节点的Id进行确认了，
+比如有的项目的根节点是&quot;00000000-0000-0000-0000-00000000000a&quot;。</p> <p>目前此变量已经废弃，前端算法可以自动识别根节点。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 已废弃</span>
+<span class="token keyword">var</span> EPSBootId <span class="token operator">=</span> <span class="token string">&quot;00000000-0000-0000-0000-0000000000a4&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="defaultprojectavatar"><a href="#defaultprojectavatar" class="header-anchor">#</a> defaultProjectAvatar</h2> <p>此变量的意思是配置默认项目头像，项目没有项目头像的情况下显示, 默认是 &quot;/PowerMobile2/static/img/user1.png&quot;</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> defaultProjectAvatar <span class="token operator">=</span> <span class="token string">&quot;/PowerMobile2/static/img/user1.png&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="allowmultiplesite"><a href="#allowmultiplesite" class="header-anchor">#</a> allowMultipleSite</h2> <p>此变量的意思是是否允许审批消息进行跨站点聚合，默认值是false，一般不推荐使用跨站点聚合，使用切换站点就可以了。如果想开启，设置true。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 是否允许跨站点聚合</span>
+<span class="token keyword">var</span> allowMultipleSite <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="hideworkflowattach-新增功能"><a href="#hideworkflowattach-新增功能" class="header-anchor">#</a> hideWorkFlowAttach(新增功能)</h2> <p>是否隐藏审批流上传附件的功能</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 是否禁止流程上传附件功能</span>
+<span class="token keyword">var</span> hideWorkFlowAttach <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="useouterweb"><a href="#useouterweb" class="header-anchor">#</a> useOuterWeb</h2> <p>是否使用外部表单，也就是表单中只嵌入PC转的html pho文件或者htm文件</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 使用外部链接：针对表单</span>
+<span class="token keyword">var</span> useOuterWeb <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="shortreturnenable"><a href="#shortreturnenable" class="header-anchor">#</a> shortReturnEnable</h2> <p>驳回的简单模式
+驳回时，前面已有多人审批，默认第一个节点,隐藏”直接回到我手里”,默认就是”按原步骤审批”
+如果启用的话设置 true 否则设置false</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 驳回时，前面已有多人审批，默认第一个节点</span>
+<span class="token comment">// 隐藏”直接回到我手里”,默认就是”按原步骤审批”</span>
+<span class="token keyword">var</span> shortReturnEnable <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="personallist"><a href="#personallist" class="header-anchor">#</a> personalList</h2> <p>此变量的意思是个人中心列表数据，之前个人中心的数据是从后端进行获取的，
+但是这部分从后端获取没什么意义，所以移植到前端进行配置处理。
+enable设置为true的话，此数据有可能能显示，此数据的显示或者隐藏除了enable字段之外还和页面的执行环境有关
+执行环境：PowerMobile2 APP环境， 企业微信环境。
+部分数据如下:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 个人中心列表显示</span>
+<span class="token keyword">var</span> personalList <span class="token operator">=</span> <span class="token punctuation">{</span>
+  groupTop<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;收藏&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;icon&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;icon-iconset0220-copy&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;url&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;/personal/collect&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;enable&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;arrow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  groupBottom<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;站点管理&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;icon&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;icon-iconset0401&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;url&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;/site_list&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;enable&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;arrow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;修改密码&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;icon&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;icon-mima&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;url&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;/personal/reset_pwd&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;enable&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;arrow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;语言设置&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;icon&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;icon-shezhi&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;url&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;enable&quot;</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 功能未完成，不要放开</span>
+    <span class="token string">&quot;arrow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;意见反馈&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;icon&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;icon-smile&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;url&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;/personal/feed_back&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;enable&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;arrow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;h5plus&quot;</span><span class="token punctuation">,</span> 
+    <span class="token string">&quot;icon&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;icon-info-circle&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;url&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;/personal/plus&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;enable&quot;</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 测试使用，不要放开</span>
+    <span class="token string">&quot;arrow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;关于&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;icon&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;icon-info-circle&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;url&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;enable&quot;</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 功能未完成，不要放开</span>
+    <span class="token string">&quot;arrow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;清除缓存&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;icon&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;icon-info-circle&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;url&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;/clearPlus&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;enable&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;arrow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/power-mobile-doc/server/" class="prev router-link-active">PowerMobile 服务端配置文档</a></span> <span class="next"><a href="/power-mobile-doc/server/configedit.html">Power.ConfigEdit.exe APP配置信息</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/power-mobile-doc/assets/js/app.9dc17d65.js" defer></script><script src="/power-mobile-doc/assets/js/2.42f6d855.js" defer></script><script src="/power-mobile-doc/assets/js/13.a94ea747.js" defer></script>
+  </body>
+</html>
