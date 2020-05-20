@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>表单的详细配置 | 普华移动端配置文档</title>
+    <meta name="description" content="PowerMobile2配置文档">
+    
+    
+    <link rel="preload" href="/power-mobile-doc/assets/css/0.styles.a624016e.css" as="style"><link rel="preload" href="/power-mobile-doc/assets/js/app.4f9b025f.js" as="script"><link rel="preload" href="/power-mobile-doc/assets/js/2.1a5ece77.js" as="script"><link rel="preload" href="/power-mobile-doc/assets/js/10.e1da7cb1.js" as="script"><link rel="prefetch" href="/power-mobile-doc/assets/js/11.c19ca164.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/12.c8ad100b.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/13.5fc1f1b5.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/14.6de54975.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/15.bcaab6f7.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/16.ec7abfa7.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/17.214bb511.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/18.cabd085f.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/19.ef274739.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/20.e91d70cf.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/21.4d38d826.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/22.138cd203.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/23.d5f13497.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/24.299beb7b.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/25.a169fa2a.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/26.d895221d.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/27.830260fa.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/28.561046cb.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/29.0b662c44.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/3.645baaf8.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/30.8a417f36.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/31.f2c53912.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/4.b58c1e7f.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/5.c686f6ac.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/6.5ff23d3f.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/7.6de2d18c.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/8.bea59607.js"><link rel="prefetch" href="/power-mobile-doc/assets/js/9.8abecdba.js">
+    <link rel="stylesheet" href="/power-mobile-doc/assets/css/0.styles.a624016e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/power-mobile-doc/" class="home-link router-link-active"><!----> <span class="site-name">普华移动端配置文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/power-mobile-doc/resource/learning.html" class="nav-link">学习中心</a></div><div class="nav-item"><a href="/power-mobile-doc/conf/window.html" class="nav-link">窗体表单配置</a></div><div class="nav-item"><a href="/power-mobile-doc/resource/doc.html" class="nav-link">文档下载</a></div><div class="nav-item"><a href="/power-mobile-doc/resource/email.html" class="nav-link">意见反馈</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/power-mobile-doc/resource/learning.html" class="nav-link">学习中心</a></div><div class="nav-item"><a href="/power-mobile-doc/conf/window.html" class="nav-link">窗体表单配置</a></div><div class="nav-item"><a href="/power-mobile-doc/resource/doc.html" class="nav-link">文档下载</a></div><div class="nav-item"><a href="/power-mobile-doc/resource/email.html" class="nav-link">意见反馈</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>初识 PowerMobile2</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/power-mobile-doc/start/" class="sidebar-link">介绍</a></li><li><a href="/power-mobile-doc/start/install.html" class="sidebar-link">安装 Power-Mobile APP</a></li><li><a href="/power-mobile-doc/start/version.html" class="sidebar-link">PowerMobile2 版本更新</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>APP服务端部署</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/power-mobile-doc/server/" class="sidebar-link">PowerMobile2 服务端配置文档</a></li><li><a href="/power-mobile-doc/server/config.html" class="sidebar-link">配置config.js</a></li><li><a href="/power-mobile-doc/server/configedit.html" class="sidebar-link">Power.ConfigEdit.exe APP配置信息</a></li><li><a href="/power-mobile-doc/server/nodeserver.html" class="sidebar-link">nodeServer 配置信息</a></li><li><a href="/power-mobile-doc/server/https.html" class="sidebar-link">nodeServer https配置</a></li><li><a href="/power-mobile-doc/server/apppush.html" class="sidebar-link">APP推送消息的配置</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Web配置文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/power-mobile-doc/web/" class="sidebar-link">PowerMobile2 Web配置文档</a></li><li><a href="/power-mobile-doc/web/devplat.html" class="sidebar-link">开发平台使用简要说明</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>配置文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/power-mobile-doc/conf/window.html" class="sidebar-link">窗体的详细配置</a></li><li><a href="/power-mobile-doc/conf/form.html" class="active sidebar-link">表单的详细配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/power-mobile-doc/conf/form.html#fields-showfields-字段中的controltype和format详细说明" class="sidebar-link">fields | showFields 字段中的controlType和format详细说明</a></li><li class="sidebar-sub-header"><a href="/power-mobile-doc/conf/form.html#demo示例" class="sidebar-link">demo示例</a></li><li class="sidebar-sub-header"><a href="/power-mobile-doc/conf/form.html#树形表格-child-treegrid-配置" class="sidebar-link">树形表格(child-treeGrid)配置</a></li><li class="sidebar-sub-header"><a href="/power-mobile-doc/conf/form.html#树形子表-child-tree-配置" class="sidebar-link">树形子表(child-tree)配置</a></li></ul></li><li><a href="/power-mobile-doc/conf/guide.html" class="sidebar-link">向导的详细配置</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>企业微信配置</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/power-mobile-doc/wechat/" class="sidebar-link">企业微信配置</a></li><li><a href="/power-mobile-doc/wechat/wechatpush.html" class="sidebar-link">微信消息推送</a></li><li><a href="/power-mobile-doc/wechat/outmenu.html" class="sidebar-link">输出PowerMobile2菜单</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>API文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/power-mobile-doc/api/" class="sidebar-link">API文档说明</a></li><li><a href="/power-mobile-doc/api/system.html" class="sidebar-link">系统方法 API</a></li><li><a href="/power-mobile-doc/api/request.html" class="sidebar-link">请求 API</a></li><li><a href="/power-mobile-doc/api/single.html" class="sidebar-link">单点登录 页面说明</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>资源中心</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/power-mobile-doc/resource/learning.html" class="sidebar-link">PowerMobile2 学习中心</a></li><li><a href="/power-mobile-doc/resource/doc.html" class="sidebar-link">下载说明</a></li><li><a href="/power-mobile-doc/resource/email.html" class="sidebar-link">意见反馈</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="表单的详细配置"><a href="#表单的详细配置" class="header-anchor">#</a> 表单的详细配置</h1> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;useOuterWeb&quot;</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 此设置会替换 config.js 中的useOuterWeb设置 默认false [false, true];</span>
+  <span class="token string">&quot;keyword&quot;</span> <span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 关键词</span>
+  <span class="token string">&quot;keywordType&quot;</span> <span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// BO(关键词类型BO | ViewEntity)</span>
+  <span class="token string">&quot;keyField&quot;</span> <span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 主键, 默认Id</span>
+  <span class="token string">&quot;name&quot;</span> <span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 基础信息(页签名称)</span>
+  <span class="token string">&quot;titleField&quot;</span> <span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 标题字段</span>
+  <span class="token string">&quot;statusField&quot;</span> <span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">//主表状态字段</span>
+  <span class="token string">&quot;hideDefaultFields&quot;</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否隐藏主表中的默认字段，默认是false, 如果隐藏，可以配置成true</span>
+  <span class="token string">&quot;NotSaveForm&quot;</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 禁止保存按钮 [true false] 默认false 启用之后没有保存按钮</span>
+  <span class="token comment">// 事件定义部分 不需要的话可以不用配置</span>
+  <span class="token comment">// 注意 beforeLoad， afterLoad， 还有callback全部都是字符串</span>
+  <span class="token string">&quot;jsContent&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+     <span class="token string">&quot;beforeLoad&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// string 加载前事件 &quot;function () {}&quot; </span>
+     <span class="token string">&quot;afterLoad&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// string 加载后事件 &quot;function () {}&quot;,</span>
+     <span class="token comment">// 自定义事件</span>
+     <span class="token string">&quot;customizeEvents&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+		<span class="token punctuation">{</span>
+			<span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;窗体自定义事件1&quot;</span><span class="token punctuation">,</span>
+      		<span class="token string">&quot;callback&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;function () {}&quot;</span> <span class="token comment">// string</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">{</span>
+			<span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;窗体自定义事件2&quot;</span><span class="token punctuation">,</span>
+      		<span class="token string">&quot;callback&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;function () {}&quot;</span> <span class="token comment">// string</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;fields&quot;</span> <span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 要显示的字段名</span>
+	  <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 字段描述</span>
+	  <span class="token comment">//controlType代表的是 类型 text(默认普通文本) | number(数字) | </span>
+      <span class="token comment">//checkbox(选择框) |  datePicker(日期选择器) | select(下拉框) | RichEditor(富文本)</span>
+      <span class="token comment">// multiple-select(多选框 数据配置成下拉框) | textarea (多行文本)</span>
+	  <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> 
+	  <span class="token comment">// format 格式化规则 ''(默认) | n2 (数字千分符) | rate(数字 税率 小数点8位) | </span>
+	  <span class="token comment">// yyyy-MM-dd (日期格式化) | boolean|number|string (针对checkbox)</span>
+	  <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;isReadonly&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// true(字段只读 查看状态 默认true) | false (编辑和新增状态 默认false) </span>
+      <span class="token string">&quot;disabled&quot;</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 禁用 比如表单状态 不必填写的日期等。</span>
+	  <span class="token string">&quot;groupIndex&quot;</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">// 整形，如1：分组序号，如存在分组，相同分组序号显示在一起，分组之间有灰色线分割</span>
+  	<span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;tabs&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        <span class="token string">&quot;type&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// report（报表）| attach（附件）| url（ifarme内链接）| child（子单，默认）</span>
+        <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 页签标题</span>
+        <span class="token string">&quot;formId&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 子表单的formId(子单需要打开另外的表单的话)</span>
+        <span class="token string">&quot;keyword&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 子表关键词</span>
+        <span class="token string">&quot;keywordType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// BO(关键词类型BO | ViewEntity)</span>
+        <span class="token string">&quot;keyField&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 主键, 默认Id</span>
+        <span class="token string">&quot;sequField&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 排序字段及方式(Sequ desc)</span>
+        <span class="token string">&quot;connectMap&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token comment">// 子表和主表关联关系</span>
+           <span class="token string">&quot;子表外键&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;主表主键&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+       <span class="token string">&quot;showFields&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+         <span class="token punctuation">{</span>
+			<span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 要显示的字段名</span>
+			<span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 字段描述</span>
+			<span class="token comment">//controlType代表的是 类型 text(默认普通文本) | number(数字) | </span>
+            <span class="token comment">//checkbox(选择框) |  datePicker(日期选择器) | select(下拉框) | RichEditor(富文本)</span>
+            <span class="token comment">// multiple-select(多选框 数据配置成下拉框) | textarea (多行文本)</span>
+			<span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> 
+			<span class="token comment">// format 格式化规则 ''(默认) | n2 (数字千分符) | rate(数字 税率 小数点8位) | </span>
+			<span class="token comment">// yyyy-MM-dd (日期格式化) | boolean|number|string (针对checkbox)</span>
+			<span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+			<span class="token string">&quot;showPlace&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;&quot;</span> <span class="token comment">// showPlace 字段显示的位置，search,tag，title，left，right，center</span>
+         <span class="token punctuation">}</span>
+       <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="fields-showfields-字段中的controltype和format详细说明"><a href="#fields-showfields-字段中的controltype和format详细说明" class="header-anchor">#</a> fields | showFields 字段中的controlType和format详细说明</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+	<span class="token string">&quot;showFields&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+	  <span class="token punctuation">{</span>
+	  <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> 
+	  <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+	  <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+	  <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+	  <span class="token string">&quot;showPlace&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;&quot;</span>
+	  <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>上面json中，controlType和format配合使用的，先controlType后format</p> <ol><li>controlType 之text类型</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+	<span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span>
+	<span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span><span class="token comment">// 如果controlType是text类型， format字段直接设置空的字符串即可</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="2"><li>controlType 之number类型</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+	<span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;number&quot;</span><span class="token punctuation">,</span>
+	<span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span><span class="token comment">// 如果controlType是number类型， format字段可以设置为&quot;n2&quot; 或者 &quot;&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="3"><li>controlType 之checkbox类型</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+	<span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;checkbox&quot;</span><span class="token punctuation">,</span>
+	<span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span><span class="token comment">// 如果controlType是checkbox类型， format字段可以设置为&quot;boolean&quot; | &quot;string&quot; | &quot;number&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="4"><li>controlType 之datePicker类型</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+	<span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;datePicker&quot;</span><span class="token punctuation">,</span>
+	<span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+	<span class="token comment">// 如果controlType是datePicker类型， </span>
+	<span class="token comment">// format字段可以设置为</span>
+	<span class="token comment">// &quot;yyyy-MM-dd HH:mm:ss&quot; </span>
+	<span class="token comment">// &quot;yyyy-MM-ddTHH:mm:ss&quot; </span>
+	<span class="token comment">// &quot;yyyy-MM-dd&quot; </span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="5"><li>controlType 之select类型</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+	<span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;select&quot;</span><span class="token punctuation">,</span>
+	<span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+	<span class="token comment">// 如果controlType是select类型， </span>
+	<span class="token comment">// format字段可以设置为&quot;&quot;</span>
+	<span class="token comment">// 但是必须保证在PC端窗体对应的表单中的comboboxdata中要有对应的下拉框的配置</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="demo示例"><a href="#demo示例" class="header-anchor">#</a> demo示例</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+    <span class="token string">&quot;keyword&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;SalesExpense&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;keywordType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;BO&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;statusField&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;Status&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;titleField&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;Title&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;keyField&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;ID&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;销售费用报销&quot;</span><span class="token punctuation">,</span>
+	<span class="token string">&quot;jsContent&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+		<span class="token string">&quot;afterLoad&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;function(){var that=this;window.PowerApp.Map.getCurrentCityWeather(function(res){console.log(res)})};&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;autoEvent&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;function (){console.log('自适应事件')}&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;customizeEvents&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;自定义事件1&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;callback&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;function () {console.log('改变表单相关字段数据');this.customize_formData({Title:'123456'});}&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;自定义事件2&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;callback&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;function () {console.log('改变主表tab页');this.customize_changeTabs('projectExpense_1','hide');}&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;自定义事件3&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;callback&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;function () {console.log('对应子表中的现有数据');this.customize_getChildData('projectExpense_1');}&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;自定义事件4&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;callback&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;function () {console.log('提供表单相关参数');console.log(this.customize_params());}&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;fields&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;Code&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;编号&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isReadonly&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isShow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;groupIndex&quot;</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;Status&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;审批状态&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;select&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isReadonly&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isShow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;groupIndex&quot;</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;Title&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;报销说明&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isReadonly&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isShow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;groupIndex&quot;</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;SalesTaskID&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;销售任务&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;wizard&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isReadonly&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isShow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;groupIndex&quot;</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;ClientName&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;任务名称&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isReadonly&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isShow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;groupIndex&quot;</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;ThisExpense&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;本次报销&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;n2&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;number&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isReadonly&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isShow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;groupIndex&quot;</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;TotalExpense&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;已累计报销&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;n2&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;number&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isReadonly&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isShow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;groupIndex&quot;</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;RegHumName&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;报销人&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isReadonly&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isShow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;groupIndex&quot;</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;RegDate&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;申请日期&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;yyyy-MM-dd&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;datePicker&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isReadonly&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isShow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;groupIndex&quot;</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;ApprHumName&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;批准人名称&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isReadonly&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isShow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;groupIndex&quot;</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;ApprDate&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;批准日期&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;yyyy-MM-dd&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;datePicker&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isReadonly&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isShow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;groupIndex&quot;</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;FafangAmount&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;发放金额&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;n2&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;number&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isReadonly&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isShow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;groupIndex&quot;</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;FafangDate&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;发放日期&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;yyyy-MM-dd&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;datePicker&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isReadonly&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;isShow&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;groupIndex&quot;</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;tabs&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;type&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;child&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;报销明细&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;formId&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;keyword&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;projectExpense_1&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;keywordType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;BO&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;keyField&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;ID&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;connectMap&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                <span class="token string">&quot;ParentId&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;ID&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;showFields&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;ExpenseAccount&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;费用类型&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;showPlace&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;title&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;BeginDate&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;开始日期&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;datePicker&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;yyyy-MM-dd&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;showPlace&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;left&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;EndDate&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;截止日期&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;datePicker&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;yyyy-MM-dd&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;showPlace&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;right&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;ApplyExpense&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;label&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;申报费用&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;controlType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;number&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;format&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;n2&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;showPlace&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;center&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+</code></pre></div><h2 id="树形表格-child-treegrid-配置"><a href="#树形表格-child-treegrid-配置" class="header-anchor">#</a> 树形表格(child-treeGrid)配置</h2> <p>下面的示例中重点展示子表的树形tree-grid结构的配置，其他的就不展示了。</p> <p>注意：树形结构只是展示数据，无法在手机上录入数据。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;keyword&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SalesExpense&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;keywordType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BO&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;statusField&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Status&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;titleField&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Title&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;keyField&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ID&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;销售费用报销&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;jsContent&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;fields&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tabs&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token comment">// 必填</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;child-treeGrid&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// 必填</span>
+            <span class="token property">&quot;parentField&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ParentId&quot;</span><span class="token punctuation">,</span><span class="token comment">//必填，树形数据父级主键</span>
+            <span class="token property">&quot;titleField&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Name&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// 必填</span>
+            <span class="token property">&quot;showFields&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Name&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;名称&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;controlType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 和主表的类似，参考主表</span>
+                    <span class="token property">&quot;format&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>          <span class="token comment">// 和主表的类似，参考主表</span>
+                    <span class="token property">&quot;width&quot;</span><span class="token operator">:</span> <span class="token string">&quot;125px&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 最好填写对应的宽度 不填的话默认45px</span>
+                    <span class="token property">&quot;showPlace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;title&quot;</span> <span class="token comment">// 填写一个showPlace 为title的用来做树形结构的展示标题</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Code&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;编码&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;controlType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 和主表的类似，参考主表</span>
+                    <span class="token property">&quot;format&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>          <span class="token comment">// 和主表的类似，参考主表</span>
+                    <span class="token property">&quot;width&quot;</span><span class="token operator">:</span> <span class="token string">&quot;45px&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 最好填写对应的宽度 不填的话默认45px</span>
+                    <span class="token property">&quot;showPlace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span> <span class="token comment">// 如果不是title就可以不配置</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token comment">// 必填</span>
+            <span class="token comment">// 此字段和PC端的fields一样，描述的信息也是一样的，参考PC端的fields</span>
+            <span class="token property">&quot;connectMap&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;EpsProjId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EpsProjId&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token comment">// 必填</span>
+            <span class="token property">&quot;keyword&quot;</span><span class="token operator">:</span> <span class="token string">&quot;DocFolder&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// 最好填上 是BO还是ViewEntity</span>
+            <span class="token property">&quot;keywordType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BO&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// 必填</span>
+            <span class="token property">&quot;keyField&quot;</span><span class="token operator">:</span> <span class="token string">&quot;id&quot;</span><span class="token punctuation">,</span><span class="token comment">//必填，树形数据主键</span>
+            <span class="token comment">// 必填</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;树形tree-grid子表&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="树形子表-child-tree-配置"><a href="#树形子表-child-tree-配置" class="header-anchor">#</a> 树形子表(child-tree)配置</h2> <p>下面的示例中重点展示树形tree子表的配置，其他的就不展示了。</p> <p>注意：树形结构只是展示数据，无法在手机上录入数据。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;keyword&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SalesExpense&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;keywordType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BO&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;statusField&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Status&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;titleField&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Title&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;keyField&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ID&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;销售费用报销&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;jsContent&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;fields&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tabs&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token comment">// 必填</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;child-tree&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// 必填</span>
+            <span class="token property">&quot;parentField&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ParentId&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;titleField&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Name&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// 必填 showField也可以配置一个空的数组[],title位置会标记为Code字段，如果没有Code字段建议还是要配置</span>
+            <span class="token property">&quot;showFields&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Name&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;名称&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;controlType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 和主表的类似，参考主表</span>
+                    <span class="token property">&quot;format&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>          <span class="token comment">// 和主表的类似，参考主表</span>
+                    <span class="token property">&quot;width&quot;</span><span class="token operator">:</span> <span class="token string">&quot;45px&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 最好填写对应的宽度 不填的话默认45px</span>
+                    <span class="token property">&quot;showPlace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;title&quot;</span> <span class="token comment">// 填写一个showPlace 为title的用来做树形结构的展示标题</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token comment">// 必填</span>
+            <span class="token comment">// 此字段和PC端的fields一样，描述的信息也是一样的，参考PC端的fields</span>
+            <span class="token property">&quot;connectMap&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;MasterId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Id&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token comment">// 必填</span>
+            <span class="token property">&quot;keyword&quot;</span><span class="token operator">:</span> <span class="token string">&quot;DocFolder&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// 最好填上 是BO还是ViewEntity</span>
+            <span class="token property">&quot;keywordType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BO&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// 必填</span>
+            <span class="token property">&quot;keyField&quot;</span><span class="token operator">:</span> <span class="token string">&quot;id&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// 必填</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;树形tree子表&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/power-mobile-doc/conf/window.html" class="prev">窗体的详细配置</a></span> <span class="next"><a href="/power-mobile-doc/conf/guide.html">向导的详细配置</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/power-mobile-doc/assets/js/app.4f9b025f.js" defer></script><script src="/power-mobile-doc/assets/js/2.1a5ece77.js" defer></script><script src="/power-mobile-doc/assets/js/10.e1da7cb1.js" defer></script>
+  </body>
+</html>
